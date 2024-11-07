@@ -6,9 +6,9 @@ def Main():
     offerType = int(input(Messages.PROMPT_USER_OFFER_TYPE))
     
     if offerType == 1:
-        Constructor.typePC(offerType)
+        print(Constructor.typePC(offerType)) ## Constructor.typePC(offerType): self statement error
     elif offerType == 2:
-        Constructor.typePC(offerType)
+        print(Constructor.typePC(offerType)) ## Constructor.typePC(offerType): self statement error
     elif offerType == 3:
         Constructor.typeMonitor()
     elif offerType == 4:
