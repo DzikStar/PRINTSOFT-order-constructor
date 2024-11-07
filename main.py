@@ -14,6 +14,6 @@ def Main():
     elif offerType == 4:
         Constructor.typePrinter()
     elif offerType == 5:
-        Constructor.typePrinter()
+        Constructor.typeOther()
 
 Main()
