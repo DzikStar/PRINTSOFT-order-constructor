@@ -34,6 +34,6 @@ def typePrinter():
     
     return
 
-def typeOTHER():
+def typeOther():
     
     return
