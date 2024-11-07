@@ -3,7 +3,7 @@ import Constructor
 
 def Main():
 
-    offerType = int(input(Messages.ASK_USER_OFFER_TYPE))
+    offerType = int(input(Messages.PROMPT_USER_OFFER_TYPE))
     
     if offerType == 1:
         Constructor.typePC(offerType)
