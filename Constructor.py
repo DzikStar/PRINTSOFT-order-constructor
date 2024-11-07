@@ -34,6 +34,6 @@ def typePrinter():
     
     return
 
-def typePC():
+def typeOTHER():
     
     return
