@@ -1,4 +1,4 @@
-import Messages
+import modules.Messages as Messages
 
 def typePC(desktopType):
 
@@ -10,7 +10,7 @@ def typePC(desktopType):
             "disk": input(f"{Messages.SPEC_DISK}: "),
             "os": input(f"{Messages.SPEC_OS}: "),
             "warranty": input(f"{Messages.SPEC_WARRANTY}: "),
-            "retailPrice": input(f"{Messages.SPEC_RETAIL_PRICE}") 
+            "retailPrice": input(f"{Messages.SPEC_RETAIL_PRICE}: ") 
         }
     elif desktopType == 2:
         offerSpecs = {
@@ -21,19 +21,16 @@ def typePC(desktopType):
             "os": input(f"{Messages.SPEC_OS}: "),
             "warranty": input(f"{Messages.SPEC_WARRANTY}: "),
             "monitorSize": input(f"{Messages.SPEC_MONITOR_SIZE}: "),
-            "retailPrice": input(f"{Messages.SPEC_RETAIL_PRICE}") 
+            "retailPrice": input(f"{Messages.SPEC_RETAIL_PRICE}: ") 
         }
 
     return offerSpecs
 
 def typeMonitor():
-    
     return
 
 def typePrinter():
-    
     return
 
 def typeOther():
-    
     return

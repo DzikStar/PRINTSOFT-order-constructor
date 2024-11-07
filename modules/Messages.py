@@ -6,7 +6,6 @@ PROMPT_USER_OFFER_TYPE = """Typy ofert
 5.) Inna
 
 Wybierz: """
-
 PROMPT_USER_AMOUT = "Wybierz ilość"
 SPEC_PRODUCENT = "Producent"
 SPEC_PROCESSOR = "Processor"
@@ -25,4 +24,3 @@ SPEC_PRINT_COLOR = "Kolor druku"
 SPEC_COMMUNICATION = "Komunikacja"
 SPEC_SCANNER = "Skaner"
 SPEC_MISC = "Inne"
-
