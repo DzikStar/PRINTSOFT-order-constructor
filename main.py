@@ -29,6 +29,7 @@ def Main():
         Utils.terminalClear
 
         clientChoice = int(input(Messages.PROMPT_USER_ITEMS_MANAGER))
+        itemsAmount = int(input(Messages.PROMPT_USER_AMOUNT))
 
         if clientChoice == 1:
             Utils.terminalClear()
@@ -45,9 +46,9 @@ def Main():
     offers = []
     currentOfferId = 0
 
-    Utils.terminalClear()
-
     while True:
+        Utils.terminalClear()
+
         currentOfferId += 1
         offers += manageItems(currentOfferId)
 

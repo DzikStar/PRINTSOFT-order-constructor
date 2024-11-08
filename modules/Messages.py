@@ -11,7 +11,7 @@ PROMPT_USER_ITEMS_MANAGER = """1.) Dodaj ofertę
 3.) Wykonaj podsumowanie oferty
 
 Wybierz: """
-PROMPT_USER_AMOUT = "Wybierz ilość"
+PROMPT_USER_AMOUNT = "Wybierz ilość: "
 DEVICE_PC = "Komputer"
 DEVICE_LAPTOP = "Laptop"
 DEVICE_PRINTER = "Drukarka"
