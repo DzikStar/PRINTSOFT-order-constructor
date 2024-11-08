@@ -4,7 +4,7 @@ import modules.Utils as Utils
 
 def Main():
 
-    def addItem():
+    def addItem(offerId):
         Utils.terminalClear()
         offerType = int(input(Messages.PROMPT_USER_OFFER_TYPE))
         Utils.terminalClear()
@@ -20,21 +20,19 @@ def Main():
         elif offerType == 5:
             offer = Constructor.typeOther()
 
-        offerItem = [{
-            "offerId": "TODO",
+        return [{
+            "offerId": offerId,
             "offerContent": f"{offer}"
         }]
-
-        return offerItem
     
-    def manageItems():
+    def manageItems(offerId):
         Utils.terminalClear
 
         clientChoice = int(input(Messages.PROMPT_USER_ITEMS_MANAGER))
 
         if clientChoice == 1:
             Utils.terminalClear()
-            offer = addItem()
+            offer = addItem(offerId)
         elif clientChoice == 2:
             Utils.terminalClear()
             print("TODO")
@@ -45,10 +43,12 @@ def Main():
         return offer
 
     offers = []
+    currentOfferId = 0
 
     Utils.terminalClear()
 
     while True:
-        offers += manageItems()
+        currentOfferId += 1
+        offers += manageItems(currentOfferId)
 
 Main()
