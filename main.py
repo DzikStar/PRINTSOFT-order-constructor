@@ -27,7 +27,7 @@ def Main():
         Utils.terminalClear
 
         clientChoice = int(input(Messages.PROMPT_USER_ITEMS_MANAGER))
-        # Wyrzucić itemsAmount do addItem()
+        # TODO: Wyrzucić itemsAmount do addItem()
         # itemsAmount = int(input(Messages.PROMPT_USER_AMOUNT))
 
         if clientChoice == 1:
