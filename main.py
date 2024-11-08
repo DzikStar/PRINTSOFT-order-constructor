@@ -3,17 +3,20 @@ import modules.Constructor as Constructor
 
 def Main():
 
-    offerType = int(input(Messages.PROMPT_USER_OFFER_TYPE))
-    
-    if offerType == 1:
-        x = Constructor.typePC(offerType)
-    elif offerType == 2:
-        x = Constructor.typePC(offerType)
-    elif offerType == 3:
-        x = Constructor.typeMonitor()
-    elif offerType == 4:
-        x = Constructor.typePrinter()
-    elif offerType == 5:
-        x = Constructor.typeOther()
+    def addItem():
+        offerType = int(input(Messages.PROMPT_USER_OFFER_TYPE))
+        
+        if offerType == 1:
+            offer = Constructor.typePC(offerType)
+        elif offerType == 2:
+            offer = Constructor.typePC(offerType)
+        elif offerType == 3:
+            offer = Constructor.typeMonitor()
+        elif offerType == 4:
+            offer = Constructor.typePrinter()
+        elif offerType == 5:
+            offer = Constructor.typeOther()
+
+        return offer
 
 Main()

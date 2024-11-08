@@ -6,6 +6,11 @@ PROMPT_USER_OFFER_TYPE = """Typy ofert
 5.) Inna
 
 Wybierz: """
+DEVICE_PC = "Komputer"
+DEVICE_LAPTOP = "Laptop"
+DEVICE_PRINTER = "Drukarka"
+DEVICE_MONITOR = "Monitor"
+DEVICE_OTHER = "Inne Urządzenie"
 PROMPT_USER_AMOUT = "Wybierz ilość"
 SPEC_PRODUCENT = "Producent"
 SPEC_PROCESSOR = "Processor"
