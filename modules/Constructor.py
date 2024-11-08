@@ -10,7 +10,7 @@ def typePC(deviceType):
             f"{Messages.SPEC_DISK}: {input(f"{Messages.SPEC_DISK}: ")}",
             f"{Messages.SPEC_OS}: {input(f"{Messages.SPEC_OS}: ")}",
             f"{Messages.SPEC_WARRANTY}: {input(f"{Messages.SPEC_WARRANTY}: ")}",
-            f"{Messages.SPEC_RETAIL_PRICE}: {input(f"{Messages.SPEC_RETAIL_PRICE}: ")}"
+            f"{Messages.SPEC_RETAIL_PRICE}: {input(f"{Messages.SPEC_RETAIL_PRICE}: ")} {Messages.CURRENCY_PLN}"
             ])
     elif deviceType == 2:
         offerSpecs = "\n".join([
@@ -21,7 +21,7 @@ def typePC(deviceType):
             f"{Messages.SPEC_OS}: {input(f"{Messages.SPEC_OS}: ")}",
             f"{Messages.SPEC_WARRANTY}: {input(f"{Messages.SPEC_WARRANTY}: ")}",
             f"{Messages.SPEC_MONITOR_SIZE}: {input(f"{Messages.SPEC_MONITOR_SIZE}: ")}",
-            f"{Messages.SPEC_RETAIL_PRICE}: {input(f"{Messages.SPEC_RETAIL_PRICE}: ")}"
+            f"{Messages.SPEC_RETAIL_PRICE}: {input(f"{Messages.SPEC_RETAIL_PRICE}: ")} {Messages.CURRENCY_PLN}"
             ])
     return offerSpecs
 
@@ -33,7 +33,7 @@ def typeMonitor():
         f"{Messages.SPEC_DISPLAY_TYPE}: {input(f"{Messages.SPEC_DISPLAY_TYPE}: ")}",
         f"{Messages.SPEC_DISPLAY_HZ}: {input(f"{Messages.SPEC_DISPLAY_HZ}: ")}",
         f"{Messages.SPEC_WARRANTY}: {input(f"{Messages.SPEC_WARRANTY}: ")}",
-        f"{Messages.SPEC_RETAIL_PRICE}: {input(f"{Messages.SPEC_RETAIL_PRICE}: ")}"
+        f"{Messages.SPEC_RETAIL_PRICE}: {input(f"{Messages.SPEC_RETAIL_PRICE}: ")} {Messages.CURRENCY_PLN}"
     ])
 
 def typePrinter():
@@ -45,11 +45,11 @@ def typePrinter():
         f"{Messages.SPEC_WARRANTY}: {input(f"{Messages.SPEC_WARRANTY}: ")}",
         f"{Messages.SPEC_COMMUNICATION}: {input(f"{Messages.SPEC_COMMUNICATION}: ")}",
         f"{Messages.SPEC_SCANNER}: {input(f"{Messages.SPEC_SCANNER}: ")}",
-        f"{Messages.SPEC_RETAIL_PRICE}: {input(f"{Messages.SPEC_RETAIL_PRICE}: ")}",
+        f"{Messages.SPEC_RETAIL_PRICE}: {input(f"{Messages.SPEC_RETAIL_PRICE}: ")} {Messages.CURRENCY_PLN}",
     ])
 
 def typeOther():
     return "\n".join([
         # TODO: Adding items implementation
-        f"{Messages.SPEC_RETAIL_PRICE}: {input(f"{Messages.SPEC_RETAIL_PRICE}: ")}",
+        f"{Messages.SPEC_RETAIL_PRICE}: {input(f"{Messages.SPEC_RETAIL_PRICE}: ")} {Messages.CURRENCY_PLN}",
     ])
