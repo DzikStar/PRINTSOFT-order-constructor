@@ -1,29 +1,28 @@
 import modules.Messages as Messages
 
-def typePC(desktopType):
+def typePC(deviceType):
 
-    if desktopType == 1:
-        offerSpecs = {
-            "producent": input(f"{Messages.SPEC_PRODUCENT}: "),
-            "processor": input(f"{Messages.SPEC_PROCESSOR}: "),
-            "ram": input(f"{Messages.SPEC_RAM}: "),
-            "disk": input(f"{Messages.SPEC_DISK}: "),
-            "os": input(f"{Messages.SPEC_OS}: "),
-            "warranty": input(f"{Messages.SPEC_WARRANTY}: "),
-            "retailPrice": input(f"{Messages.SPEC_RETAIL_PRICE}: ") 
-        }
-    elif desktopType == 2:
-        offerSpecs = {
-            "producent": input(f"{Messages.SPEC_PRODUCENT}: "),
-            "processor": input(f"{Messages.SPEC_PROCESSOR}: "),
-            "ram": input(f"{Messages.SPEC_RAM}: "),
-            "disk": input(f"{Messages.SPEC_DISK}: "),
-            "os": input(f"{Messages.SPEC_OS}: "),
-            "warranty": input(f"{Messages.SPEC_WARRANTY}: "),
-            "monitorSize": input(f"{Messages.SPEC_MONITOR_SIZE}: "),
-            "retailPrice": input(f"{Messages.SPEC_RETAIL_PRICE}: ") 
-        }
-
+    if deviceType == 1:
+        offerSpecs = "\n".join([
+            f"{Messages.SPEC_PRODUCENT}: {input(f"{Messages.SPEC_PRODUCENT}: ")}",
+            f"{Messages.SPEC_PROCESSOR}: {input(f"{Messages.SPEC_PROCESSOR}: ")}",
+            f"{Messages.SPEC_RAM}: {input(f"{Messages.SPEC_RAM}: ")}",
+            f"{Messages.SPEC_DISK}: {input(f"{Messages.SPEC_DISK}: ")}",
+            f"{Messages.SPEC_OS}: {input(f"{Messages.SPEC_OS}: ")}",
+            f"{Messages.SPEC_WARRANTY}: {input(f"{Messages.SPEC_WARRANTY}: ")}",
+            f"{Messages.SPEC_RETAIL_PRICE}: {input(f"{Messages.SPEC_RETAIL_PRICE}: ")}"
+            ])
+    elif deviceType == 2:
+        offerSpecs = "\n".join([
+            f"{Messages.SPEC_PRODUCENT}: {input(f"{Messages.SPEC_PRODUCENT}: ")}",
+            f"{Messages.SPEC_PROCESSOR}: {input(f"{Messages.SPEC_PROCESSOR}: ")}",
+            f"{Messages.SPEC_RAM}: {input(f"{Messages.SPEC_RAM}: ")}",
+            f"{Messages.SPEC_DISK}: {input(f"{Messages.SPEC_DISK}: ")}",
+            f"{Messages.SPEC_OS}: {input(f"{Messages.SPEC_OS}: ")}",
+            f"{Messages.SPEC_WARRANTY}: {input(f"{Messages.SPEC_WARRANTY}: ")}",
+            f"{Messages.SPEC_MONITOR_SIZE}: {input(f"{Messages.SPEC_MONITOR_SIZE}: ")}",
+            f"{Messages.SPEC_RETAIL_PRICE}: {input(f"{Messages.SPEC_RETAIL_PRICE}: ")}"
+            ])
     return offerSpecs
 
 def typeMonitor():
