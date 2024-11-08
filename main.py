@@ -1,11 +1,14 @@
 import modules.Messages as Messages
 import modules.Constructor as Constructor
+import modules.Utils as Utils
 
 def Main():
 
     def addItem():
+        Utils.terminalClear()
         offerType = int(input(Messages.PROMPT_USER_OFFER_TYPE))
-        
+        Utils.terminalClear()
+
         if offerType == 1:
             offer = Constructor.typePC(offerType)
         elif offerType == 2:
@@ -17,6 +20,33 @@ def Main():
         elif offerType == 5:
             offer = Constructor.typeOther()
 
+        offerItem = [{
+            "offerId": 1,
+            "offerContent": f"{offer}"
+        }]
+
+        return offerItem
+    
+    def manageItems():
+        Utils.terminalClear
+
+        clientChoice = int(input(Messages.PROMPT_USER_ITEMS_MANAGER))
+
+        if clientChoice == 1:
+            Utils.terminalClear()
+            offer = addItem()
+        elif clientChoice == 2:
+            Utils.terminalClear()
+            print("TODO")
+        elif clientChoice == 3:
+            print("TODO")
+        
         return offer
+
+    offers = []
+    offers += manageItems()
+    
+    Utils.terminalClear()
+    print(offers)
 
 Main()

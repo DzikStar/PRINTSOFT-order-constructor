@@ -6,12 +6,17 @@ PROMPT_USER_OFFER_TYPE = """Typy ofert
 5.) Inna
 
 Wybierz: """
+PROMPT_USER_ITEMS_MANAGER = """1.) Dodaj ofertę
+2.) Usuń ofertę
+3.) Wykonaj podsumowanie oferty
+
+Wybierz: """
+PROMPT_USER_AMOUT = "Wybierz ilość"
 DEVICE_PC = "Komputer"
 DEVICE_LAPTOP = "Laptop"
 DEVICE_PRINTER = "Drukarka"
 DEVICE_MONITOR = "Monitor"
 DEVICE_OTHER = "Inne Urządzenie"
-PROMPT_USER_AMOUT = "Wybierz ilość"
 SPEC_PRODUCENT = "Producent"
 SPEC_PROCESSOR = "Processor"
 SPEC_RAM = "Pamięć RAM"
