@@ -9,9 +9,7 @@ def Main():
         offerType = int(input(Messages.PROMPT_USER_OFFER_TYPE))
         Utils.terminalClear()
 
-        if offerType == 1:
-            offer = Constructor.typePC(offerType)
-        elif offerType == 2:
+        if offerType in range(1, 2):
             offer = Constructor.typePC(offerType)
         elif offerType == 3:
             offer = Constructor.typeMonitor()
@@ -29,7 +27,8 @@ def Main():
         Utils.terminalClear
 
         clientChoice = int(input(Messages.PROMPT_USER_ITEMS_MANAGER))
-        itemsAmount = int(input(Messages.PROMPT_USER_AMOUNT))
+        # Wyrzucić itemsAmount do addItem()
+        # itemsAmount = int(input(Messages.PROMPT_USER_AMOUNT))
 
         if clientChoice == 1:
             Utils.terminalClear()
