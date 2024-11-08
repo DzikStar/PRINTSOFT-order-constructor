@@ -10,10 +10,10 @@ def Main():
     elif offerType == 2:
         print(Constructor.typePC(offerType))
     elif offerType == 3:
-        Constructor.typeMonitor()
+        print(Constructor.typeMonitor())
     elif offerType == 4:
-        Constructor.typePrinter()
+        print(Constructor.typePrinter())
     elif offerType == 5:
-        Constructor.typeOther()
+        print(Constructor.typeOther())
 
 Main()
