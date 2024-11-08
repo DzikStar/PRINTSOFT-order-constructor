@@ -21,7 +21,7 @@ def Main():
             offer = Constructor.typeOther()
 
         offerItem = [{
-            "offerId": 1,
+            "offerId": "TODO",
             "offerContent": f"{offer}"
         }]
 
@@ -39,14 +39,16 @@ def Main():
             Utils.terminalClear()
             print("TODO")
         elif clientChoice == 3:
+            Utils.terminalClear()
             print("TODO")
         
         return offer
 
     offers = []
-    offers += manageItems()
-    
+
     Utils.terminalClear()
-    print(offers)
+
+    while True:
+        offers += manageItems()
 
 Main()
